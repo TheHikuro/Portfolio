@@ -1,0 +1,8 @@
+/db_data
+/server
+/docker-compose.yml
+/site
+/.idea
+/www/.env
+/www/.dev
+/www/.prod
