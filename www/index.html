@@ -14,41 +14,44 @@
     </head>
     <body>
         <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Loan CLERIS</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+        <section class="banner" id="sec">
+            <header class="home" id="home">
+                <a href="#" class="nav__logo">Loan CLERIS</a>
+                <div id="nav-toggle" onclick="toggle()"></div>
+            </header>
+            <div class="home__container bd-grid">
+                <h1 class="home__title"><span>Loan <br>CLERIS</span></h1>
+            </div>
+        </section>
+                <!-- <nav class="nav bd-grid"> -->
+                    <div class="nav__menu" id="nav-menu" style="display: none">
+                        <ul>
+                            <li><a class="smoothscroll" href="#home" class="nav__link active">Home</a></li>
+                            <li><a class="smoothscroll" href="#about" class="nav__link">About</a></li>
+                            <li><a class="smoothscroll" href="#skills" class="nav__link">Skills</a></li>
+                            <li><a class="smoothscroll" href="#portfolio" class="nav__link">Portfolio</a></li>
+                            <li><a class="smoothscroll" href="#contact" class="nav__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <script type="text/javascript">
+                        function toggle(){
+                            var sec = document.getElementById('sec');
+                            var nav = document.getElementById('nav-menu');
+                            sec.classList.toggle('active');
+                            nav.classList.toggle('active');
+                            
+                            var x = document.getElementById("nav-menu");
+                            if (x.style.display == "none"){
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "none";
+                            }
+                        }
+                    </script>
 
         <main class="l-main">
             <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>Loan <br>CLERIS</span></h1>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-                    </div>
-
-                    <!-- <img src="assets/img/background.jpg" alt="" class="home__img"> -->
-                </div>
-            </section>
+            
             
             <!--===== ABOUT =====-->
             <section class="about section" id="about">
