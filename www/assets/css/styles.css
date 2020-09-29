@@ -3,7 +3,7 @@
 
 /*===== VARIABLES CSS =====*/
 :root{
-    --header-height: 3rem;
+    --header-height: 10rem;
     --font-medium: 500;
 }
 
@@ -184,8 +184,8 @@ header #nav-toggle:after{
 .home__title{
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    padding: 100px;
+    /* min-height: 100vh; */
+    padding: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,15 +193,6 @@ header #nav-toggle:after{
     z-index: 2;
 }
 .banner{
-    /* position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    /* background: url(../img/background.jpg) no-repeat top center;
-    background-size: 100%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center; */
     transition: 0.5s;
     z-index: 2;
 }
@@ -306,17 +297,24 @@ header #nav-toggle:after{
     text-align: center;
 }
 .about__img{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     padding-top: 1rem;
     width: 120px;
     height: 120px;
     background-color: var(--first-color);
     border-radius: 50%;
-    overflow: hidden;
+    overflow: hidden; */
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
 .about__img img{
-    width: 100px;
+    /* width: 150px; */
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(0,0,0,.5);
 }
 .about__subtitle{
     font-size: var(--h2-font-size);
