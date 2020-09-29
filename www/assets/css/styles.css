@@ -167,16 +167,41 @@ header #nav-toggle:after{
     height: 2px;
     background: black;
 }
-.banner{
+.back{
+    position: relative;
+    width: 100%;
+    background: url(../img/background.jpg) no-repeat top center;
+    background-size: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.home__title{
     position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    background: url(../img/background.jpg) no-repeat top center;
-    background-size: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
+    z-index: 2;
+}
+.banner{
+    /* position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    /* background: url(../img/background.jpg) no-repeat top center;
+    background-size: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
     transition: 0.5s;
     z-index: 2;
 }
@@ -201,7 +226,7 @@ header #nav-toggle:after{
     top: 0;
     right: -200px;
     width: 400px;
-    height: 799px;
+    height: 100%;
     background: #342E2D;
     z-index: 1;
     display: grid;
@@ -210,13 +235,14 @@ header #nav-toggle:after{
 }
 
 #nav-menu.active{
-    right: 0;
+    right: -400px;
 }
 
 #nav-menu ul{
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 50px;
 }
 
 #nav-menu ul li{
