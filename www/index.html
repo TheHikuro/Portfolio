@@ -6,6 +6,7 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles.scss">
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -28,15 +29,17 @@
                 </div>
             </section>
             <!-- <nav class="nav bd-grid"> -->
-        <div class="nav__menu" id="nav-menu" style="display: none">
-            <ul>
-                <li><a class="smoothscroll" href="#home" class="nav__link active">Home</a></li>
-                <li><a class="smoothscroll" href="#about" class="nav__link">About</a></li>
-                <li><a class="smoothscroll" href="#skills" class="nav__link">Skills</a></li>
-                <li><a class="smoothscroll" href="#portfolio" class="nav__link">Portfolio</a></li>
-                <li><a class="smoothscroll" href="#contact" class="nav__link">Contact</a></li>
-            </ul>
-        </div>
+        <nav class="navbar navbar-expend-md fixed-right">
+            <div class="nav__menu" id="nav-menu" style="display: none">
+                <ul>
+                    <li><a class="smoothscroll" data-item='Home' href="#home" class="nav__link active">Home</a></li>
+                    <li><a class="smoothscroll" data-item='About' href="#about" class="nav__link">About</a></li>
+                    <li><a class="smoothscroll" data-item='Skills' href="#skills" class="nav__link">Skills</a></li>
+                    <li><a class="smoothscroll" data-item='Portfolio' href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li><a class="smoothscroll" data-item='Contact' href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
         <script type="text/javascript">
             function toggle(){
                 var sec = document.getElementById('sec');
@@ -69,10 +72,7 @@
                         <div>
                             <h2 class="about__subtitle">I'am Loan CLERIS</h2>
                             <span class="about__profession">Web developer</span>
-                            <p class="about__text">I'm curently in my third year of formation to become a developer fullstacks.
-                                I decided to orient myself in web developpement in order to be able to work in a team as part of an IT project.
-                                My goal is to learn within a compagny / group in order to how professional project unfolds.
-                                Today i am motivated by the idea of continuing this learning combining professionalism, rigor and team cohesion.
+                            <p class="about__text">I'm currently in my third year of tertiary education, studying to become a full stack developer.  I've decided to pursue and specialize in project and team-based web development.  Within the next 3 years, a goal I would like to achieve is to gain experience from working for a professional IT company.  I am motivated and excited to seek out these experiences, and hopefully elevate my leadership, communication, and problem solving skills to a much higher level.
                             </p>
 
                             <div class="about__social">
@@ -122,7 +122,7 @@
                             <img src="assets/img/work1.jpg" alt="">
 
                             <div class="portfolio__link">
-                                <a href="#" class="portfolio__link-name">View details</a>
+                                <a href="../html/educ.html" class="portfolio__link-name">View details</a>
                             </div>
                         </div>
                         <div class="portfolio__img">
