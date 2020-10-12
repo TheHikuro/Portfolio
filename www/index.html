@@ -6,7 +6,6 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/styles.scss">
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -14,6 +13,7 @@
         <title>Loan CLERIS</title>
     </head>
     <body>
+        
         <div class="banner" id="sec">
             <!--===== HEADER =====-->
             <!-- <section class="banner" id="sec"> -->
@@ -31,7 +31,7 @@
             <!-- <nav class="nav bd-grid"> -->
         <nav class="navbar navbar-expend-md fixed-right">
             <div class="nav__menu" id="nav-menu" style="display: none">
-                <ul>
+                <ul class="menuItems">
                     <li><a class="smoothscroll" data-item='Home' href="#home" class="nav__link active">Home</a></li>
                     <li><a class="smoothscroll" data-item='About' href="#about" class="nav__link">About</a></li>
                     <li><a class="smoothscroll" data-item='Skills' href="#skills" class="nav__link">Skills</a></li>
@@ -122,42 +122,42 @@
                             <img src="assets/img/work1.jpg" alt="">
 
                             <div class="portfolio__link">
-                                <a href="../html/educ.html" class="portfolio__link-name">View details</a>
+                                <a href="../html/educ.html" class="portfolio__link-name">Educations</a>
                             </div>
                         </div>
                         <div class="portfolio__img">
                             <img src="assets/img/work2.jpg" alt="">
 
                             <div class="portfolio__link">
-                                <a href="#" class="portfolio__link-name">View details</a>
+                                <a href="#" class="portfolio__link-name">Professional Experiances</a>
                             </div>
                         </div>
                         <div class="portfolio__img">
                             <img src="assets/img/work3.jpg" alt="">
 
                             <div class="portfolio__link">
-                                <a href="#" class="portfolio__link-name">View details</a>
+                                <a href="#" class="portfolio__link-name">Know more about me</a>
                             </div>
                         </div>
                         <div class="portfolio__img">
                             <img src="assets/img/work4.jpg" alt="">
 
                             <div class="portfolio__link">
-                                <a href="#" class="portfolio__link-name">View details</a>
+                                <a href="#" class="portfolio__link-name">Links</a>
                             </div>
                         </div>
                         <div class="portfolio__img">
                             <img src="assets/img/work5.jpg" alt="">
 
                             <div class="portfolio__link">
-                                <a href="#" class="portfolio__link-name">View details</a>
+                                <a href="#" class="portfolio__link-name">Projects</a>
                             </div>
                         </div>
                         <div class="portfolio__img">
                             <img src="assets/img/work6.jpg" alt="">
 
                             <div class="portfolio__link">
-                                <a href="#" class="portfolio__link-name">View details</a>
+                                <a href="#" class="portfolio__link-name">Old Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -217,5 +217,16 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        <!--===== LOADING SCREEN =====-->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        
+        <script>
+            $(window).on("load", function(){
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
     </body>
 </html>
