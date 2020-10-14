@@ -1,0 +1,37 @@
+
+
+ /* Conteneur pour les actualités */
+
+#news {
+   
+    margin-top: 10px;
+    background-color: yellow;
+}
+
+ .news-container {
+    /* utiliser flexbox */
+    display: flex; 
+    /* aligner les elements au centre */
+    justify-content: center;
+    align-items: center;
+    /* marge externe */
+    margin-top: 10px;
+ }
+
+ .news-item {
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+ }
+
+ .news-item iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    border-color: black;
+ }
+
+ #nav{
+   border-color: black;
+ }
