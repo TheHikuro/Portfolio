@@ -1,3 +1,4 @@
+
 html {
   color: black;
   font-weight: 300;
@@ -32,7 +33,9 @@ div {
 }
 h2,
 h4 {
+  font-family: 'opensans-regular', sans-serif;
   margin-bottom: 2px;
+  color: #313131;
 }
 h4 {
   margin-top: 0;
@@ -42,12 +45,40 @@ h4 {
   letter-spacing: 0.2em;
   font-size: 1.1em;
 }
-.rounded {
+
+em#dates{
+  color: #6e7881;
+  font: 15px;
+  font-size: medium;
+}
+
+p#info{
+  font-family: 'opensans-regular', sans-serif;
+  font-weight: normal;
+  line-height: 25px;
+  color: #838c95;
+}
+
+.rounded{
   border-radius: 20px;
 }
+
+.rounded #eff{
+  border-radius: 25px;
+  height: 250px;
+  width: 250px;
+}
+
+.rounded #fram{
+  border-radius: 25px;
+  height: 250px;
+  width: 250px;
+}
+
 .round {
   border-radius: 25px;
 }
+
 .float-left {
   float: left;
   display: inline-block;
@@ -106,4 +137,20 @@ h4 {
   opacity: 0.8;
   -webkit-transform: scale(2, 2) rotate(10deg);
           transform: scale(2, 2) rotate(10deg);
+}
+
+img.round.zoom-out{
+  transition: all 0.4s ease-out;
+}
+
+img.round.zoom-out:hover{
+  transform: scale(1.4);
+}
+
+img.rounded.zoom-out{
+  transition: all 0.4s ease-out;
+}
+
+img.rounded.zoom-out:hover{
+  transform: scale(1.4);
 }
