@@ -200,8 +200,8 @@ header #nav-toggle:after{
     width: 100%;
     /* min-height: 100vh; */
     padding: 150px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center;
     transition: 0.5s;
     z-index: 2;
@@ -324,8 +324,6 @@ nav .menuItems li a {
     font-size: var(--big-font-size);
     color: var(--white-color);
     line-height: .8;
-}
-.home__title span{
     text-shadow: 0 1px 0 #ccc,
                  0 2px 0 #ccc,
                  0 3px 0 #ccc,
@@ -336,13 +334,72 @@ nav .menuItems li a {
                  0 8px 0 transparent,
                  0 9px 0 transparent,
                  0 10px 15px rgba(0,0,0,.5);
-    padding: 150px;
+    padding-top: 150px;
+}
+.home__title span{
+    margin: -10px;
+    display: inline-block;
 }
 @media screen and (min-width: 601px){
     .home__title{
         font-size: 80px;
+        margin: 10%;
     }
 }
+
+.a {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    display: inline-block;
+  }
+  
+  .a:hover {
+    color: #5361FF;
+    /* animation: rubberBand 5s infinite; */
+    animation-name: rubberBand;
+    text-shadow: 0 1px 0 #747ddb,
+                 0 2px 0 #747ddb,
+                 0 3px 0 #747ddb,
+                 0 4px 0 #747ddb,
+                 0 5px 0 #747ddb,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 15px rgba(0,0,0,.5);
+  }
+  
+  @keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  } 
+
 .home__scroll{
     align-self: flex-end;
     padding-bottom: var(--mb-4);
