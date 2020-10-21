@@ -13,223 +13,226 @@
         <title>Loan CLERIS</title>
     </head>
     <body>
-        
-        <div class="banner" id="sec">
-            <!--===== HEADER =====-->
-            <!-- <section class="banner" id="sec"> -->
-            <section class="back" id="back">
-                <header class="home" id="home">
-                    <a href="#" class="nav__logo"><img src="assets/img/loan_logo.PNG" alt=""></a>
-                    <div id="nav-toggle" onclick="toggle()"></div>
-                </header>
-                <div class="home_title">
-                    <div class="home__container bd-grid">
-                        <h1 class="home__title">
-                            <span class="a">L</span>
-                            <span class="a">o</span>
-                            <span class="a">a</span>
-                            <span class="a">n</span>
-                            <br>
-                            <span > </span>
-                            <span class="a">C</span>
-                            <span class="a">L</span>
-                            <span class="a">E</span>
-                            <span class="a">R</span>
-                            <span class="a">I</span>
-                            <span class="a">S</span>
-                        </h1>
+        <!--===== HEADER =====-->
+        <section class="back" id="back">
+            <header class="l-header">
+                <nav class="nav bd-grid">
+                    <div>
+                        <a href="#" class="nav__logo"><img src="assets/img/loan_logo.PNG" alt=""></a>
+                    </div>
+    
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" data-item="Home"  class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#about" data-item="About" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#skills" data-item="Skills" class="nav__link">Skills</a></li>
+                            <li class="nav__item"><a href="#portfolio" data-item="Portfolio" class="nav__link">Portfolio</a></li>
+                            <li class="nav__item"><a href="#contact" data-item="Contact" class="nav__link">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </nav>
+            </header>
+            <div class="home_title">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title">
+                        <span class="a">L</span>
+                        <span class="a">o</span>
+                        <span class="a">a</span>
+                        <span class="a">n</span>
+                        <br>
+                        <span > </span>
+                        <span class="a">C</span>
+                        <span class="a">L</span>
+                        <span class="a">E</span>
+                        <span class="a">R</span>
+                        <span class="a">I</span>
+                        <span class="a">S</span>
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <!-- <nav class="nav bd-grid"> -->
+    
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('nav-menu');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+            
+            var x = document.getElementById("nav-menu");
+            if (x.style.display == "none"){
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/profil2.JPG" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I'm Loan CLERIS</h2>
+                        <span class="about__profession">Full stack developer</span>
+                        <p class="about__text">I'm currently in my third year of tertiary education, studying to become a full stack developer.  I've decided to pursue and specialize in project and team-based web development.  Within the next 3 years, a goal I would like to achieve is to gain experience from working for a professional IT company.  I am motivated and excited to seek out these experiences, and hopefully elevate my leadership, communication, and problem solving skills to a much higher level.
+                        </p>
+
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/loan-cleris-8275b5136/" target="_blank" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/TheHikuro" target="_blank" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <!-- <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a> -->
+                        </div>
                     </div>
                 </div>
             </section>
-            <!-- <nav class="nav bd-grid"> -->
-        <nav class="navbar navbar-expend-md fixed-right">
-            <div class="nav__menu" id="nav-menu" style="display: none">
-                <ul class="menuItems">
-                    <li><a class="smoothscroll" data-item='Home' href="#home" class="nav__link active">Home</a></li>
-                    <li><a class="smoothscroll" data-item='About' href="#about" class="nav__link">About</a></li>
-                    <li><a class="smoothscroll" data-item='Skills' href="#skills" class="nav__link">Skills</a></li>
-                    <li><a class="smoothscroll" data-item='Portfolio' href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li><a class="smoothscroll" data-item='Contact' href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
-            
-        </nav>
-        <script type="text/javascript">
-            function toggle(){
-                var sec = document.getElementById('sec');
-                var nav = document.getElementById('nav-menu');
-                sec.classList.toggle('active');
-                nav.classList.toggle('active');
-                
-                var x = document.getElementById("nav-menu");
-                if (x.style.display == "none"){
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-        </script>
 
-            <main class="l-main">
-                <!--===== HOME =====-->
-                
-                
-                <!--===== ABOUT =====-->
-                <section class="about section" id="about">
-                    <h2 class="section-title">About</h2>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-                    <div class="about__container bd-grid">
-                        <div class="about__img">
-                            <img src="assets/img/profil2.JPG" alt="">
-                        </div>
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">Development web</h3>
+                        <span class="skills__name">Html</span>
+                        <span class="skills__name">Css</span>
+                        <span class="skills__name">JavaScript</span>
+                        <span class="skills__name">PhP</span>
+                        <span class="skills__name">SQL</span>
+                        
+                        <h3 class="skills__subtitle">Software development</h3>
+                        <span class="skills__name">C# - MVC</span>
+                        <span class="skills__name">Python</span>
 
-                        <div>
-                            <h2 class="about__subtitle">I'm Loan CLERIS</h2>
-                            <span class="about__profession">Full stack developer</span>
-                            <p class="about__text">I'm currently in my third year of tertiary education, studying to become a full stack developer.  I've decided to pursue and specialize in project and team-based web development.  Within the next 3 years, a goal I would like to achieve is to gain experience from working for a professional IT company.  I am motivated and excited to seek out these experiences, and hopefully elevate my leadership, communication, and problem solving skills to a much higher level.
-                            </p>
+                        <h3 class="skills__subtitle">Versioning & Integrations</h3>
+                        <span class="skills__name">Docker</span>
+                        <span class="skills__name">GitHub - Sourcetree</span>
+                        <span class="skills__name">OVH</span>
 
-                            <div class="about__social">
-                                <a href="https://www.linkedin.com/in/loan-cleris-8275b5136/" target="_blank" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                                <a href="https://github.com/TheHikuro" target="_blank" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                                <!-- <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!--===== SKILLS =====-->
-                <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
-
-                    <div class="skills__container bd-grid">
-                        <div class="skills__box">
-                            <h3 class="skills__subtitle">Development web</h3>
-                            <span class="skills__name">Html</span>
-                            <span class="skills__name">Css</span>
-                            <span class="skills__name">JavaScript</span>
-                            <span class="skills__name">PhP</span>
-                            <span class="skills__name">SQL</span>
-                            
-                            <h3 class="skills__subtitle">Software development</h3>
-                            <span class="skills__name">C# - MVC</span>
-                            <span class="skills__name">Python</span>
-
-                            <h3 class="skills__subtitle">Versioning & Integrations</h3>
-                            <span class="skills__name">Docker</span>
-                            <span class="skills__name">GitHub - Sourcetree</span>
-                            <span class="skills__name">OVH</span>
-
-                            <h3 class="skills__subtitle">My learning objectives</h3>
-                            <span class="skills__name">SCSS</span>
-                            <span class="skills__name">React.JS</span>
-                            <span class="skills__name">WordPress</span>
-                        </div>
-
-                        <div class="skills__img">
-                            <img src="assets/img/skills_banner.jpg" alt="">
-                        </div>
-                    </div>
-                </section>
-
-                <!--===== PORTFOLIO =====-->
-                <section class="portfolio section" id="portfolio">
-                    <h2 class="section-title">Portfolio</h2>
-
-                    <div class="portfolio__container bd-grid">
-                        <div class="portfolio__img">
-                            <img src="assets/LOAN HTML/images/educ__banner.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <a href="assets/html/educ.html" class="portfolio__link-name">Educations</a>
-                            </div>
-                        </div>
-                        <div class="portfolio__img">
-                            <img src="assets/LOAN HTML/images/work_banner.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <a href="assets/html/proExp.html" class="portfolio__link-name">Work Experiences</a>
-                            </div>
-                        </div>
-                        <div class="portfolio__img">
-                            <img src="assets/img/work3.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <a href="#" class="portfolio__link-name">Know more about me</a>
-                            </div>
-                        </div>
-                        <div class="portfolio__img">
-                            <img src="assets/img/work4.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <a href="#" class="portfolio__link-name">Links</a>
-                            </div>
-                        </div>
-                        <div class="portfolio__img">
-                            <img src="assets/img/work5.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <a href="#" class="portfolio__link-name">Projects</a>
-                            </div>
-                        </div>
-                        <div class="portfolio__img">
-                            <img src="assets/img/work6.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <a href="assets/LOAN HTML/index.html" class="portfolio__link-name">Old Portfolio</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!--===== CONTACT =====-->
-                <section class="contact section" id="contact">
-                    <h2 class="section-title">Contact</h2>
-
-                        <form action="" class="contact__form">
-                            <div class="contact__inputs">
-                                <input type="text" placeholder="Name" class="contact__input">
-                                <input type="mail" placeholder="Email" class="contact__input">
-                            </div>
-
-                            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                            <input type="submit" value="Send" class="contact__button">
-                        </form>
-                    </div>
-                </section>
-            </main>
-
-            <!--===== FOOTER =====-->
-            <footer class="footer section">
-                <div class="footer__container bd-grid">
-                    <div class="footer__data">
-                        <h2 class="footer__title">LOAN CLERIS</h2>
-                        <p class="footer__text">I'm Loan CLERIS and this is my personal website</p>
+                        <h3 class="skills__subtitle">My learning objectives</h3>
+                        <span class="skills__name">SCSS</span>
+                        <span class="skills__name">React.JS</span>
+                        <span class="skills__name">WordPress</span>
                     </div>
 
-                    <div class="footer__data">
-                        <h2 class="footer__title">EXPLORE</h2>
-                        <ul>
-                            <li><a href="#home" class="footer__link">Home</a></li>
-                            <li><a href="#about" class="footer__link">About</a></li>
-                            <li><a href="#skills" class="footer__link">Skills</a></li>
-                            <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                            <li><a href="#Contact" class="footer__link">Contact</a></li>
-                        </ul>
+                    <div class="skills__img">
+                        <img src="assets/img/skills_banner.jpg" alt="">
                     </div>
-                    
-                    <div class="footer__data">
-                        <h2 class="footer__title">FOLLOW</h2>
-                        <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
-                    </div>
-
-
                 </div>
-            </footer>
-        </div>
+            </section>
+
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
+
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/LOAN HTML/images/educ__banner.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="assets/html/educ.html" class="portfolio__link-name">Educations</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/LOAN HTML/images/work_banner.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="assets/html/proExp.html" class="portfolio__link-name">Work Experiences</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work3.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">Know more about me</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work4.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">Links</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work5.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">Projects</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work6.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="assets/LOAN HTML/index.html" class="portfolio__link-name">Old Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Send" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">LOAN CLERIS</h2>
+                    <p class="footer__text">I'm Loan CLERIS and this is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+        
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>

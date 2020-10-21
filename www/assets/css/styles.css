@@ -153,30 +153,6 @@ header a img{
 
 }
 
-header #nav-toggle{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-header #nav-toggle:before{
-    content: '';
-    position: absolute;
-    top: 7px;
-    width: 100%;
-    height: 4px;
-    background: black;
-}
-
-header #nav-toggle:after{
-    content: '';
-    position: absolute;
-    bottom: 7px;
-    width: 100%;
-    height: 4px;
-    background: black;
-}
 .back{
     position: relative;
     width: 100%;
@@ -207,26 +183,14 @@ header #nav-toggle:after{
     z-index: 2;
     text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
-.banner{
-    transition: 0.5s;
-    z-index: 2;
-}
-.banner.active header #nav-toggle:before{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
 
-.banner.active header #nav-toggle:after{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.banner.active{
-    transform: translateX(-400px);
-}
 /*===== NAV =====*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 @media screen and (max-width: 768px){
     .nav__menu{
         position: fixed;
@@ -240,48 +204,38 @@ header #nav-toggle:after{
         backdrop-filter: blur(10px);
     }
 }
-
-#nav-menu{
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 400px;
-    height: 100%;
-    background: #342E2D;
-    z-index: 1;
-    display: grid;
-    place-items: center;
-    transition: 0.5s;
+.nav__item{
+    margin-bottom: var(--mb-4);
 }
-
-#nav-menu.active{
-    right: -400px;
-}
-
-#nav-menu ul{
+.nav__link{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+    color: var(--dark-color);
 }
-
-#nav-menu ul li{
-    list-style: none;
+.nav__link:hover{
+    color: var(--first-color);
+}
+.nav__logo{
+    color: var(--white-color);
+}
+.nav__toggle{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 /* ===== FILL TEXT ON HOVER =====*/
 
-nav .menuItems li a {
+nav ul li a.nav__link {
     text-decoration: none;
     display: inline-block;
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 400;
     text-transform: uppercase;
-    color: white;
+    color: var(--first-color);
     transition: all 0.5s ease-in-out;
     position: relative;
-  }
-  nav .menuItems li a::before {
+}
+  nav ul li a.nav__link::before {
     content: attr(data-item);
     transition: 0.5s;
     color: #8254ff;
@@ -292,21 +246,17 @@ nav .menuItems li a {
     right: 0;
     width: 0;
     overflow: hidden;
-  }
-  nav .menuItems li a:hover::before {
+}
+  nav ul li a.nav__link:hover::before {
     width: 100%;
     transition: all 0.5s ease-in-out;
-  }
+}
 
 
 .nav__logo{
     color: var(--white-color);
 } 
-.nav__toggle{
-    color: var(--white-color);
-    font-size: 1.5rem;
-    cursor: pointer;
-} 
+
 
 /*=== Show menu ===*/
 .show{
@@ -609,80 +559,16 @@ nav .menuItems li a {
         margin-left: var(--mb-4);
         margin-bottom: 0;
     }
-    /* ====== LOADER ======== */    
-
-    .loader-wrapper{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #242f3f;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .nav__toggle{
+        position: sticky;
+        display: none;
     }
-    .loader {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      position: relative;
-      border: 4px solid #Fff;
-      animation: loader 3s infinite ease;
+    .nav__link{
+        color: var(--white-color);
     }
-    
-    .loader-inner {
-      vertical-align: top;
-      display: inline-block;
-      width: 100%;
-      background-color: #fff;
-      animation: loader-inner 2s infinite ease-in;
+    .nav__link:hover{
+        color: var(--white-color);
     }
-    
-    @keyframes loader {
-      0% {
-        transform: rotate(0deg);
-      }
-      
-      25% {
-        transform: rotate(180deg);
-      }
-      
-      50% {
-        transform: rotate(180deg);
-      }
-      
-      75% {
-        transform: rotate(360deg);
-      }
-      
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    
-    @keyframes loader-inner {
-      0% {
-        height: 0%;
-      }
-      
-      25% {
-        height: 0%;
-      }
-      
-      50% {
-        height: 100%;
-      }
-      
-      75% {
-        height: 100%;
-      }
-      
-      100% {
-        height: 0%;
-      }
-    }
-
     .active::after{
         background-color: var(--white-color);
     }
