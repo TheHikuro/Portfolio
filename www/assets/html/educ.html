@@ -6,6 +6,7 @@
 
             <!-- ===== CSS ===== -->
             <link rel="stylesheet" href="../css/exp.css">
+            <link rel="stylesheet" href="../css/modal.css">
         </head>
         <body>
           <header>
@@ -17,22 +18,50 @@
           </header>
             <div class="wrapper">
                 &nbsp;
+
                 <div class="id-card rounded" id="card1">
                   <div class="avatar-wrap float-left">
-                    <img class="round zoom-out" src="../img/JDA.jpg" alt="" />
+                    <img class="round zoom-out" src="../img/JDA.jpg" id="ban1" alt="" />
+                    <img class="round zoom-out" src="../img/JDA_logo.png" id="ban2" alt="" />
                   </div>
                   <div class="bio-wrap float-left">
                     <h2>Jeanne D'arc</h2>
                     <h4>College  <em id="dates"> <span>•</span>2010 - 2014 </em> </h4> 
                     <p id="info">The college years gave me the basics to move into cooking. <br> At the time, I didn't really know what to do, I wanted to do a job that interrested me. <br> I then had the chance to be accepted into Ferrandi school.</p>
                   </div>
+                  <!-- Trigger/Open The Modal -->
+                  <button id="myBtn" class="My_Btn"> 👉 Know More..</button>
+                </div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <img src="../img/JDA.jpg" alt="">
+                    <span class="close">&times;</span>
+                    <h2>Jeanne D'arc</h2>
+                    <h4>College  <em id="dates"> <span>•</span>2010 - 2014 </em> </h4>
+                    <p>The college years gave me the basics to move into cooking. <br> At the time, I didn't really know what to do, I wanted to do a job that interrested me. <br> I then had the chance to be accepted into Ferrandi school.</p>
+                  </div>
                 </div>
 
                 <div class="id-card rounded" id="card2">
                     <div class="avatar-wrap float-left">
-                      <img class="round zoom-out" src="../img/loanFerrandi__banner.JPG" alt="" />
+                      <img class="round zoom-out" src="../img/loanFerrandi__banner.JPG" id="ban3" alt="" />
+                      <img class="round zoom-out" src="../img/ferrandi_logo.jpg" id="ban4" alt="" />
                     </div>
                     <div class="bio-wrap float-left">
+                      <h2>Ferrandi</h2>
+                      <h4>High school <em id="dates"> <span>•</span>2014 - 2017 </em></h4>
+                      <p id="info">This 3 years academic and professional experience in the world of cooking has brought me discipline, diligence and creactivity. <br> I appreciedted valuing my ability to listen and help each other with my colleagues.</p>
+                    </div>
+                    <button id="myBtn" class="My_Btn"> 👉 Know More..</button>
+                  </div>
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <img src="../img/loanFerrandi__banner.JPG" alt="">
+                      <span class="close">&times;</span>
                       <h2>Ferrandi</h2>
                       <h4>High school <em id="dates"> <span>•</span>2014 - 2017 </em></h4>
                       <p id="info">This 3 years academic and professional experience in the world of cooking has brought me discipline, diligence and creactivity. <br> I appreciedted valuing my ability to listen and help each other with my colleagues.</p>
@@ -41,9 +70,22 @@
 
                   <div class="id-card rounded" id="card3">
                     <div class="avatar-wrap float-left">
-                      <img class="round zoom-out" src="../img/aforp_banner.JPG" alt="" />
+                      <img class="round zoom-out" src="../img/aforp_banner.JPG" id="ban5" alt="" />
+                      <img class="round zoom-out" src="../img/aforp_logo.png" id="ban6" alt="" />
                     </div>
                     <div class="bio-wrap float-left">
+                      <h2>Aforp</h2>
+                      <h4>Tertiary education <em id="dates"> <span>•</span>2018 - 2019 </em></h4>
+                      <p id="info">My change of professional orientation was a hard test. I lacked knowledge compared to the others so I had to work harder. <br> In 2 years I was able to learn to do project management, develop applications in C# (MVC) and all the basics knowledge I needed to graduate.</p>
+                    </div>
+                    <button id="myBtn" class="My_Btn"> 👉 Know More..</button>
+                  </div>
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <img src="../img/aforp_banner.JPG" alt="">
+                      <span class="close">&times;</span>
                       <h2>Aforp</h2>
                       <h4>Tertiary education <em id="dates"> <span>•</span>2018 - 2019 </em></h4>
                       <p id="info">My change of professional orientation was a hard test. I lacked knowledge compared to the others so I had to work harder. <br> In 2 years I was able to learn to do project management, develop applications in C# (MVC) and all the basics knowledge I needed to graduate.</p>
@@ -61,10 +103,52 @@
                         This step back allowed me to review my weak points. <br> At the end of july, I finaly passed it and I'm going to do another year in Efficom to specialize in Full Stack developement.
                       </p>
                     </div>
+                    <button id="myBtn" class="My_Btn"> 👉 Know More..</button>
                   </div>
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <img src="../img/efficom_banner.jpg" alt="">
+                      <span class="close">&times;</span>
+                      <h2>Efficom</h2>
+                      <h4>Tertiary education <em id="dates"> <span>•</span>2019 - 2021 </em></h4>
+                      <p id="info">Unfortunately i didn't get it the first time so after that I went to Efficom to pass it again. 
+                        This step back allowed me to review my weak points. <br> At the end of july, I finaly passed it and I'm going to do another year in Efficom to specialize in Full Stack developement.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="id-card rounded" id="card5">
+                    <div class="avatar-wrap float-left">
+                      <img class="rounded zoom-out" id="eff" src="../img/ESGI_logo.jpg" alt="" />
+                    </div>
+                    <div class="bio-wrap float-left">
+                      <h2>ESGI</h2>
+                      <h4>Master <em id="dates"> <span>•</span>2021 - 2023 </em></h4>
+                      <p id="info"> Admitted for semptember 2021 to become a web engineer.
+                      </p>
+                    </div>
+                    <button id="myBtn" class="My_Btn"> 👉 Know More..</button>
+                  </div>
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <img src="../img/ESGI_banner.jpg" alt="">
+                      <span class="close">&times;</span>
+                      <h2>ESGI</h2>
+                      <h4>Master <em id="dates"> <span>•</span>2021 - 2023 </em></h4>
+                      <p id="info"> Admitted for semptember 2021 to become a web engineer.
+                      </p>
+                    </div>
+                  </div>
+
             </div>
+
             <script src="https://unpkg.com/scrollreveal"></script>
             <script src="../js/main.js"></script>
+            <script src="../js/modal.js"></script>
 
         </body>
     </html>

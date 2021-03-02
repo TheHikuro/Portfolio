@@ -6,6 +6,7 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="assets/LOAN HTML/js/modernizr.js"></script>
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -16,9 +17,11 @@
         <!--===== HEADER =====-->
         <section class="back" id="back">
             <header class="l-header">
-                <nav class="nav bd-grid">
+                <nav class="nav bd-grid" id="nav-wrap">
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	                <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
                     <div>
-                        <a href="#" class="nav__logo"><img src="assets/img/loan_logo.PNG" alt=""></a>
+                        <a href="#" class="nav__logo"><img src="assets/img/Loan_CLERIS.gif" alt=""></a>
                     </div>
     
                     <div class="nav__menu" id="nav-menu">
@@ -52,6 +55,7 @@
                         <span class="a">I</span>
                         <span class="a">S</span>
                     </h1>
+                    <h1 class="tittle_mobile">Loan CLERIS</h1>
                 </div>
             </div>
         </section>
@@ -96,6 +100,9 @@
                             <a href="https://www.linkedin.com/in/loan-cleris-8275b5136/" target="_blank" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
                             <a href="https://github.com/TheHikuro" target="_blank" class="about__social-icon"><i class='bx bxl-github' ></i></a>
                             <!-- <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a> -->
+                        </div>
+                        <div class="about_CV">
+                            <a href="assets/img/Loan_CV_2021.pdf" target="_blank" class="CV">Download my resume</a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +161,7 @@
                             <a href="assets/html/proExp.html" class="portfolio__link-name">Work Experiences</a>
                         </div>
                     </div>
-                    <div class="portfolio__img">
+                    <!-- <div class="portfolio__img">
                         <img src="assets/img/work3.jpg" alt="">
 
                         <div class="portfolio__link">
@@ -174,9 +181,9 @@
                         <div class="portfolio__link">
                             <a href="#" class="portfolio__link-name">Projects</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="portfolio__img">
-                        <img src="assets/img/work6.jpg" alt="">
+                        <img src="assets/LOAN HTML/images/DSC_0127.jpg" alt="">
 
                         <div class="portfolio__link">
                             <a href="assets/LOAN HTML/index.html" class="portfolio__link-name">Old Portfolio</a>
@@ -188,18 +195,27 @@
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
-                    <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Send" class="contact__button">
+                    <form action="" method="post" class="contact__form" id="contactForm" name="contactForm">
+                        <fieldset>
+                            <div class="contact__inputs">
+                                <input type="text" placeholder="Name" class="contact__input" id="contactName" name="contactName">
+                                <input type="mail" placeholder="Email" class="contact__input" id="contactEmail" name="contactEmail">
+                            </div>
+                            <input type="text" placeholder="Subject" class="contact__input" id="contactSubject" name="contactSubject">
+                            <textarea name="" cols="50" rows="6" class="contact__input" id="contactMessage" name="contactMessage"></textarea>
+                            
+                            <div>
+                                <button class="contact__button">Send</button>
+                                <span id="image-loader">
+                                   <img alt="" src="assets/LOAN HTML/images/loader.gif">
+                                </span>
+                            </div>
+                        </fieldset>
                     </form>
-                </div>
+                    <div id="message-warning"> An error occurred while sending the message.</div>
+                        <div id="message-success">
+                        <i class="fa fa-check"></i>Your message has been sent.<br>
+                    </div>
             </section>
         </main>
 
@@ -238,7 +254,16 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/LOAN HTML/js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="assets/LOAN HTML/js/jquery-migrate-1.2.1.min.js"></script>
+
+        <script src="assets/LOAN HTML/js/jquery.flexslider.js"></script>
+        <script src="assets/LOAN HTML/js/waypoints.js"></script>
+        <script src="assets/LOAN HTML/js/jquery.fittext.js"></script>
+        <script src="assets/LOAN HTML/js/magnific-popup.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/init.js"></script>
 
         <!--===== LOADING SCREEN =====-->
         

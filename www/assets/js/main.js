@@ -60,6 +60,7 @@ sr.reveal('.about__subtitle', {delay: 300})
 sr.reveal('.about__profession', {delay: 400})
 sr.reveal('.about__text', {delay: 500})
 sr.reveal('.about__social-icon', {delay: 600, interval: 200})
+sr.reveal('.CV', {delay: 700, interval: 200})
 
 /*SCROLL SKILLS*/
 sr.reveal('.skills__subtitle', {})
@@ -75,9 +76,16 @@ sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
-/*SCROLL EDUCTIONS/WORK*/
+/*SCROLL EDUCTIONS*/
 sr.reveal('#card1', {})
 sr.reveal('#card2', {interval: 800, delay: 200})
 sr.reveal('#card3', {delay: 400})
 sr.reveal('#card4', {delay: 500})
 sr.reveal('#card5', {delay: 600})
+
+/*SCROLL WORK */
+sr.reveal('#card_1', {})
+sr.reveal('#card_2', {interval: 600, delay: 200})
+sr.reveal('#card_3', {delay: 400})
+sr.reveal('#card_4', {delay: 500})
+sr.reveal('#card_5', {delay: 600})

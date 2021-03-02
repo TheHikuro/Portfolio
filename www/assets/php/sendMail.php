@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 // Replace this with your own email address
 $siteOwnersEmail = 'loan.cleris@gmail.com';
@@ -13,18 +13,18 @@ if($_POST) {
 
    // Check Name
 	if (strlen($name) < 2) {
-		$error['name'] = "Veuillez saisir votre nom.";
+		$error['name'] = "Please enter your name.";
 	}
 	// Check Email
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
-		$error['email'] = "Veuillez saisir une adresse email valide";
+		$error['email'] = "Please enter a valid email address";
 	}
 	// Check Message
 	if (strlen($contact_message) < 15) {
-		$error['message'] = "Veuillez saisir un message. Celui-ci doit comprendre au moins 15 caractères.";
+		$error['message'] = "Please enter a message. This must be at least 15 characters long.";
 	}
    // Subject
-	if ($subject == '') { $subject = "Formulaire de contact Free"; }
+	if ($subject == '') { $subject = "Contact form"; }
 
 
    // Set Message
@@ -49,7 +49,7 @@ if($_POST) {
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
 		if ($mail) { echo "OK"; }
-      else { echo "Une erreur est survenue. Veuillez réessayer."; }
+      else { echo "An error has occurred. Try Again."; }
 		
 	} # end if - no validation error
 
