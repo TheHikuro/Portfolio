@@ -1,0 +1,19 @@
+header img{
+    height: 150px;
+    width: 200px;
+}
+
+.cont_btn{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+body{
+    background: url(../images/back_log.jpg) no-repeat bottom center;
+    background-size: cover;
+}
+
+button#Back{
+    width: 150px;
+}

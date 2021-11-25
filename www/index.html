@@ -6,7 +6,13 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <script src="assets/LOAN HTML/js/modernizr.js"></script>
+        <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="assets/css/util.css">
+        <!-- <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"> --> <!-- change ma police -->
+        <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="assets/vendor/animate/animate.css">
+        <link rel="stylesheet" href="assets/vendor/css-hamburgers/hamburgers.min.css">
+	    <link rel="stylesheet" href="assets/vendor/select2/select2.min.css">
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -17,11 +23,9 @@
         <!--===== HEADER =====-->
         <section class="back" id="back">
             <header class="l-header">
-                <nav class="nav bd-grid" id="nav-wrap">
-                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	                <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                <nav class="nav bd-grid" >
                     <div>
-                        <a href="#" class="nav__logo"><img src="assets/img/Loan_CLERIS.gif" alt=""></a>
+                        <a href="#" class="nav__logo"><img style="visibility: hidden;" src="assets/img/Loan_CLERIS.gif" alt=""></a>
                     </div>
     
                     <div class="nav__menu" id="nav-menu">
@@ -118,22 +122,22 @@
                         <span class="skills__name">Html</span>
                         <span class="skills__name">Css</span>
                         <span class="skills__name">JavaScript</span>
-                        <span class="skills__name">PhP</span>
-                        <span class="skills__name">SQL</span>
+                        <span class="skills__name">React.JS - Redux</span>
+                        <span class="skills__name">PhP - Symfony</span>
                         
                         <h3 class="skills__subtitle">Software development</h3>
                         <span class="skills__name">C# - MVC</span>
                         <span class="skills__name">Python</span>
+                        <span class="skills__name">SQL</span>
 
                         <h3 class="skills__subtitle">Versioning & Integrations</h3>
                         <span class="skills__name">Docker</span>
-                        <span class="skills__name">GitHub - Sourcetree</span>
+                        <span class="skills__name">GitHub</span>
                         <span class="skills__name">OVH</span>
 
                         <h3 class="skills__subtitle">My learning objectives</h3>
                         <span class="skills__name">SCSS</span>
-                        <span class="skills__name">React.JS</span>
-                        <span class="skills__name">WordPress</span>
+                        <span class="skills__name">Node JS</span>
                     </div>
 
                     <div class="skills__img">
@@ -186,7 +190,7 @@
                         <img src="assets/LOAN HTML/images/DSC_0127.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="assets/LOAN HTML/index.html" class="portfolio__link-name">Old Portfolio</a>
+                            <a href="assets/html/projects.html" class="portfolio__link-name">Projects</a>
                         </div>
                     </div>
                 </div>
@@ -195,27 +199,64 @@
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-                    <form action="" method="post" class="contact__form" id="contactForm" name="contactForm">
-                        <fieldset>
-                            <div class="contact__inputs">
-                                <input type="text" placeholder="Name" class="contact__input" id="contactName" name="contactName">
-                                <input type="mail" placeholder="Email" class="contact__input" id="contactEmail" name="contactEmail">
+                <div class="bg-contact100">
+                    <div class="container-contact100">
+                        <div class="wrap-contact100">
+                            <div class="contact100-pic js-tilt" data-tilt>
+                                <img src="assets/img/img-01.png" alt="LoanCLERIS_contact">
                             </div>
-                            <input type="text" placeholder="Subject" class="contact__input" id="contactSubject" name="contactSubject">
-                            <textarea name="" cols="50" rows="6" class="contact__input" id="contactMessage" name="contactMessage"></textarea>
-                            
-                            <div>
-                                <button class="contact__button">Send</button>
-                                <span id="image-loader">
-                                   <img alt="" src="assets/LOAN HTML/images/loader.gif">
+            
+                            <form class="contact100-form validate-form" id="contactForm" name="contactForm" method="post">
+                                <span class="contact100-form-title">
+                                    Get in touch
                                 </span>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div id="message-warning"> An error occurred while sending the message.</div>
-                        <div id="message-success">
-                        <i class="fa fa-check"></i>Your message has been sent.<br>
+            
+                                <div class="wrap-input100 validate-input" id="contact__input" data-validate = "Name is required">
+                                    <input class="input100" type="text" name="contactName" id="contactName" placeholder="Name">
+                                    <span class="focus-input100"></span>
+                                    <span class="symbol-input100">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+
+                                 <!-- contact-warning -->
+                                 <div id="message-warning"> An error occurred while sending the message.</div>
+                                 <!-- contact-success -->
+                                 <div id="message-success">
+                                 <i class="fa fa-check"></i>Your message has been sent.<br>
+                                 </div>
+            
+                                <div class="wrap-input100 validate-input" id="contact__input2" data-validate = "Valid email is required: ex@abc.xyz">
+                                    <input class="input100" type="text" name="contactEmail" id="contactEmail" placeholder="Email">
+                                    <span class="focus-input100"></span>
+                                    <span class="symbol-input100">
+                                        <i class="fa fa-at" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+
+                                <div class="wrap-input100 validate-input" id="contact__input3" data-validate = "Subject is required: ex@abc.xyz">
+                                    <input class="input100" type="text" name="contactSubject" id="contactSubject" placeholder="Subject">
+                                    <span class="focus-input100"></span>
+                                    <span class="symbol-input100">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+            
+                                <div class="wrap-input100 validate-input" id="contact__input4" data-validate = "Message is required">
+                                    <textarea class="input100" name="contactMessage" id="contactMessage" placeholder="Message"></textarea>
+                                    <span class="focus-input100"></span>
+                                </div>
+            
+                                <div class="container-contact100-form-btn" id="contact__input5">
+                                    <button class="contact100-form-btn">
+                                        Send<p style="visibility: hidden;">L</p> <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            
+                        </div>
                     </div>
+                </div>
             </section>
         </main>
 
@@ -255,9 +296,14 @@
 
         <!--===== MAIN JS =====-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/LOAN HTML/js/jquery-1.10.2.min.js"><\/script>')</script>
-        <script type="text/javascript" src="assets/LOAN HTML/js/jquery-migrate-1.2.1.min.js"></script>
-
+        <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="assets/vendor/tilt/tilt.jquery.min.js"></script> 
+        <!-- <script >
+            $('.js-tilt').tilt({
+                scale: 1.1
+            })
+        </script> -->
         <script src="assets/LOAN HTML/js/jquery.flexslider.js"></script>
         <script src="assets/LOAN HTML/js/waypoints.js"></script>
         <script src="assets/LOAN HTML/js/jquery.fittext.js"></script>

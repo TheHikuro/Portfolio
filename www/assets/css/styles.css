@@ -60,7 +60,7 @@ body{
     color: var(--text-color);
     line-height: 1.6;
     background-image: -webkit-gradient(linear, top, top, from(#ffffff), to(#e5e5e5));
-    background-image: linear-gradient(#ffffff, #e5e5e5);
+    background-image: linear-gradient(#ffffff, #eeecec);
 
 }
 h1,h2,p{
@@ -127,9 +127,13 @@ header
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 0px 30px;
     z-index: 10000;
     transition: 0.6s;
+}
+
+.l-header{
+    height: 180px;
 }
 
 /* header .nav__logo{
@@ -225,7 +229,7 @@ header a img{
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: rgba(255,255,255,.3);
+        background-color: rgba(39, 37, 37, 0.534);
         transition: .5s;
         backdrop-filter: blur(10px);
     }
@@ -278,6 +282,19 @@ nav ul li a.nav__link {
   nav ul li a.nav__link:hover::before {
     width: 100%;
     transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 765px){
+    .nav ul li a.nav__link {
+        color: var(--white-color);
+        border: 1px solid var(--white-color);
+        border-radius: 5%;
+        padding: 3px;
+        background-color: rgba(201, 191, 191, 0.452);
+        display: inline-flex; 
+        justify-content: right;
+        margin-left: 110px;
+    }
 }
 
 
@@ -429,6 +446,7 @@ nav ul li a.nav__link {
 }
 .about__text{
     margin-bottom: var(--mb-4);
+    text-align: justify;
 }
 .about__profession{
     display: block;
@@ -451,7 +469,7 @@ nav ul li a.nav__link {
 a.CV{
     padding: 5px;
     border: 1px solid;
-    border-radius: 5%;
+    border-radius: 5px;
     width: 195px;
     color: var(--text-color);
     font-family: var(--normal-font-size);
@@ -493,10 +511,10 @@ a.CV:hover{
 }
 
 /* ===== PORTFOLIO =====*/
-.portfolio{
-    background-image: -webkit-gradient(linear, top, top, from(#F0EFF1), to(#d4d4d4));
-    background-image: linear-gradient(#F0EFF1, #d4d4d4);
-}
+/* .portfolio{
+    background-image: -webkit-gradient(linear, top, top, from(rgb(241, 240, 240)), to(rgb(238, 238, 238)));
+    background-image: linear-gradient(rgb(248, 248, 248), rgb(230, 230, 230));
+} */
 .portfolio__container{
     justify-items: center;
     row-gap: 2rem;
@@ -598,9 +616,9 @@ fieldset{
 
 #message-warning, #message-success {
     display: none;
-     background: #0F0F0F;
-     padding: 24px 24px;
-     margin-bottom: 36px;
+    background: transparent;
+    padding: 24px 24px;
+    margin-bottom: 36px;
     width: 65%;
     margin-left: 26%;
 }
@@ -615,10 +633,10 @@ margin-right: 10px;
 #nav-wrap > a.mobile-btn { display: none; }
 
 /* ===== CONTACT =====*/
-#contact{
-    background-image: -webkit-gradient(linear, top, top, from(#d1d1d1), to(#ded2f7));
-    background-image: linear-gradient(#d1d1d1, #ded2f7);
-}
+/* #contact{
+    background-image: -webkit-gradient(linear, top, top, from(#e0e0e0), to(#eeeeee));
+    background-image: linear-gradient(#eeecec, #eeeeee);
+} */
 
 /* ===== FOOTER=====*/
 .footer{

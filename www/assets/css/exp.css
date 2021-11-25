@@ -16,7 +16,7 @@ html body {
   height: 100%;
   background-repeat: no-repeat;
   /* Fallback (could use .jpg/.png alternatively) */
-  background-color: white;
+  background-color: rgba(196, 196, 196, 0.267);
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
   /* background-image: -webkit-gradient(linear, left top, right top, from(teal), to(#069));
   background-image: linear-gradient(to right, teal, #069);
@@ -63,6 +63,7 @@ p#info{
   font-weight: normal;
   line-height: 25px;
   color: #838c95;
+  text-align: justify;
 }
 
 .rounded{
@@ -114,6 +115,8 @@ p#info{
   width: 65%;
   padding-left: 30px;
   padding-right: 25px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .bio-wrap p {
   font-size: 0.7em;
@@ -199,6 +202,8 @@ img.rounded.zoom-out:hover{
   #ban6{display: none;}
   #ban8{display: none;}
   #ban10{display: none;}
+  #eff1{display: none;}
+  #banes2{display: none;}
   
 }
 
@@ -214,13 +219,18 @@ img.rounded.zoom-out:hover{
   #ban8{display: block;}
   #ban9{display: none;}
   #ban10{display: block;}
+  #baneff{display: none;}
+  #eff1{display: block;}
+  #banes1{display: none;}
+  #banes2{display: block;}
+
 
   img.round{ 
     width: 200px; 
     height: 200px;
   }
 
-  img.rounded#eff, img.rounded#ban8, img.rounded#ban10{
+  img.rounded#eff, img.rounded#ban8, img.rounded#ban10, img.rounded#eff1, img.rounded#banes2{
     width: 200px;
     height: 200px;
   }

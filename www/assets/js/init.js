@@ -65,12 +65,12 @@ jQuery(document).ready(function($) {
     /* equal to the browser height.
     ------------------------------------------------------ */
     
-       $('header').css({ 'height': $(window).height() });
+      /*  $('header').css({ 'height': $(window).height() });
        $(window).on('resize', function() {
     
             $('header').css({ 'height': $(window).height() });
             $('body').css({ 'width': $(window).width() })
-       });
+       }); */
     
     
     /*----------------------------------------------------*/
@@ -137,9 +137,7 @@ jQuery(document).ready(function($) {
     /*	contact form
     ------------------------------------------------------*/
     
-       $('form#contactForm button.contact__button').click(function() {
-    
-          $('#image-loader').fadeIn();
+       $('form#contactForm button.contact100-form-btn').click(function() {
     
           var contactName = $('#contactForm #contactName').val();
           var contactEmail = $('#contactForm #contactEmail').val();
@@ -153,25 +151,28 @@ jQuery(document).ready(function($) {
     
               type: "POST",
               url: "assets/php/sendMail.php",
-              data: data,
+              data: data, 
               success: function(msg) {
-    
-                // Message was sent
-                if (msg == 'OK') {
-                   $('#image-loader').fadeOut();
-                   $('#message-warning').hide();
-                   $('#contactForm').fadeOut();
-                   $('#message-success').fadeIn();   
-                }
-                // There was an error
-                else {
-                   $('#image-loader').fadeOut();
-                   $('#message-warning').html(msg);
-                    $('#message-warning').fadeIn();
-                }
-    
-              }
-    
+
+               // Message was sent
+               if (msg == 'OK') {
+                  $('#image-loader').fadeOut();
+                  $('#message-warning').hide();
+                  $('#contact__input').fadeOut();
+                  $('#contact__input2').fadeOut();
+                  $('#contact__input3').fadeOut();
+                  $('#contact__input4').fadeOut();
+                  $('#contact__input5').fadeOut();
+                  $('#message-success').fadeIn();   
+               }
+               // There was an error
+               else {
+                  $('#image-loader').fadeOut();
+                  $('#message-warning').html(msg);
+                  $('#message-warning').fadeIn();
+               }
+   
+            }
           });
           return false;
        });
